@@ -10,6 +10,7 @@
 #import <GTSpec/GTDefine.h>
 
 #define COLOR_TITLE                     RGBA(0,0,0,1)
+#define FONT_NAV                        FONT_(18)
 
 @interface GTBaseViewController ()
 
@@ -120,4 +121,58 @@
 {
     
 }
+#pragma mark - Empty Tips
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+-(UILabel*)mlsTitleLabel
+{
+    if (! _dmTitleLabel) {
+        _dmTitleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _dmTitleLabel.textAlignment = NSTextAlignmentCenter;
+        _dmTitleLabel.textColor = COLOR_TITLE;
+        _dmTitleLabel.backgroundColor = [UIColor clearColor];
+        _dmTitleLabel.font = FONT_NAV;
+    }
+    return _dmTitleLabel;
+}
+
+-(void)setNavTitle:(NSString *)mlsTitle
+{
+    if (! [_navTitle isEqualToString:mlsTitle]) {
+        _navTitle = [mlsTitle copy];
+        self.mlsTitleLabel.text = mlsTitle;
+        [self.mlsTitleLabel sizeToFit];
+    }
+}
+- (void)activityViewStartAnimating
+{
+    [self.view bringSubviewToFront:_activityView];
+    [_activityView startAnimating];
+    self.view.userInteractionEnabled = NO;
+}
+
+- (void)activityViewEndAnimating
+{
+    [_activityView stopAnimating];
+    self.view.userInteractionEnabled = YES;
+}
+- (void)fixSwipeBack
+{
+    //    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+    //        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    //        if ([self conformsToProtocol:@protocol(UIGestureRecognizerDelegate)]) {
+    //            self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    //        }
+    //    }
+}
+
 @end
