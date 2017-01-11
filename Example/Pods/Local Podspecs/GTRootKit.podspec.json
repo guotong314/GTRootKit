@@ -1,0 +1,22 @@
+{
+  "name": "GTRootKit",
+  "version": "0.1.0",
+  "summary": "A short description of GTRootKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GTRootKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "郭通": "guotong314@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GTRootKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GTRootKit/Classes/**/*"
+}

@@ -1,0 +1,14 @@
+source "https://github.com/guotong314/podSpec.git"
+source "https://github.com/CocoaPods/Specs.git"
+platform :ios, '7.0'
+
+target 'GTRootKit_Example' do
+#  pod 'GTRootKit', :path => '../'
+  pod 'GTSpec'
+
+  target 'GTRootKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
