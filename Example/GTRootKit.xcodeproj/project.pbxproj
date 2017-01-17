@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E036FE91E2E0328004E8D82 /* GTNavigateModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E036FE81E2E0328004E8D82 /* GTNavigateModule.m */; };
 		4E6CCACC1E261E4A003AB4A3 /* HIGORefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCAB31E261E4A003AB4A3 /* HIGORefreshHeader.m */; };
 		4E6CCACD1E261E4A003AB4A3 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E6CCAB41E261E4A003AB4A3 /* MJRefresh.bundle */; };
 		4E6CCACE1E261E4A003AB4A3 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCAB71E261E4A003AB4A3 /* MJRefreshComponent.m */; };
@@ -55,6 +56,8 @@
 		0C71FD5EAEEA581590130901 /* Pods-GTRootKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTRootKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GTRootKit_Example/Pods-GTRootKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		303554C8685AAB92251011CD /* Pods-GTRootKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTRootKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTRootKit_Example/Pods-GTRootKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		378579A8403B9A7BB0DC500E /* Pods-GTRootKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTRootKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GTRootKit_Tests/Pods-GTRootKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E036FE71E2E0328004E8D82 /* GTNavigateModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNavigateModule.h; sourceTree = "<group>"; };
+		4E036FE81E2E0328004E8D82 /* GTNavigateModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNavigateModule.m; sourceTree = "<group>"; };
 		4E49117B3B76C2245D9E7001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4E6CCAB21E261E4A003AB4A3 /* HIGORefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGORefreshHeader.h; sourceTree = "<group>"; };
 		4E6CCAB31E261E4A003AB4A3 /* HIGORefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIGORefreshHeader.m; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				4E6CCADB1E261E84003AB4A3 /* GTBaseViewController.m */,
 				4E6CCADD1E262094003AB4A3 /* GTNavigationViewController.h */,
 				4E6CCADE1E262094003AB4A3 /* GTNavigationViewController.m */,
+				4E036FE71E2E0328004E8D82 /* GTNavigateModule.h */,
+				4E036FE81E2E0328004E8D82 /* GTNavigateModule.m */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				4E6CCAD61E261E4A003AB4A3 /* UIScrollView+MJExtension.m in Sources */,
 				6003F59E195388D20070C39A /* GTAppDelegate.m in Sources */,
 				4E6CCADF1E262094003AB4A3 /* GTNavigationViewController.m in Sources */,
+				4E036FE91E2E0328004E8D82 /* GTNavigateModule.m in Sources */,
 				4E6CCACC1E261E4A003AB4A3 /* HIGORefreshHeader.m in Sources */,
 				4E6CCAD71E261E4A003AB4A3 /* UIScrollView+MJRefresh.m in Sources */,
 				4E6CCADC1E261E84003AB4A3 /* GTBaseViewController.m in Sources */,
